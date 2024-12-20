@@ -32,11 +32,14 @@ public class Users {
 		this.name = name;
 	}
 
-
 	public static class Address {
 		private Geo geo;
 		private String street;
-        public String getStreet() {
+		private String suite;
+		private String city;
+		private String zipcode;
+
+		public String getStreet() {
 			return street;
 		}
 
@@ -68,11 +71,6 @@ public class Users {
 			this.zipcode = zipcode;
 		}
 
-		private String suite;
-        private String city;  // The city should be part of Address
-        private String zipcode;
-
-
 		public Geo getGeo() {
 			return geo;
 		}
@@ -85,7 +83,6 @@ public class Users {
 			private double lat;
 			private double lng;
 
-			// Getters and Setters for Geo
 			public double getLat() {
 				return lat;
 			}
